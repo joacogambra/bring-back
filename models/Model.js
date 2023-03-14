@@ -5,7 +5,7 @@ const schema = new mongoose.Schema({
     example2: {type:Number, required:false},
     fecha: { type: Date, default: Date.now },
     booleano: {type:Boolean},
-    objeto:{type: mongoose.Types.ObjectId, ref:'collection'},
+    paraRelacionar:{type: mongoose.Types.ObjectId, ref:'collection'},
     array:[{type:String}]
 })
 
