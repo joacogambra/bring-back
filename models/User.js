@@ -4,7 +4,11 @@ const schema = new mongoose.Schema({
     name: {type:String, required:true},
     lastName: {type:String, required:true},
     dni: {type:Number, required:true},
-    rutine:[{type:String, required:false}]
+    contraseña:{type:String, required:true},
+    rutine:[{type:String, required:false}],
+    mail: {type:String, required:true},
+    codigo: {type: String, required: true},
+    verified:{type:Boolean} 
     // rutine:[{type:mongoose.Types.ObjectId, ref:'rutines'}]
 })
 
